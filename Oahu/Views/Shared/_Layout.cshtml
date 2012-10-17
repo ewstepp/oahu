@@ -1,47 +1,182 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title - Code Camp NYC</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
     </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
+    <body class="custom">
+        <div id="container">
+            <div id="page">
+                <header>
+                    <div class="float-right">
+                        <section id="login">
+                            @Html.Partial("_LoginPartial")
+                        </section>
+                    </div>
                     <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <ul class="menu">
+                            <li class="tab tab-home current">@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li class="tab tab-1">@Html.ActionLink("Schedule", "Index", "Home")</li>
+                            <li class="tab tab-2">@Html.ActionLink("Speakers & Sessions", "Index", "Home")</li>
+                            <li class="tab tab-3">@Html.ActionLink("Presentation Material", "Index", "Home")</li>
+                            <li class="tab tab-4">@Html.ActionLink("Volunteers", "Index", "Home")</li>
+                            <li class="rss"><a href="http://www.codecampnyc.org/feed/" title="Code Camp NYC RSS Feed" rel="nofollow">Subscribe</a></li>
                         </ul>
                     </nav>
+                    <div id="header">
+                        <h1 id="logo">@Html.ActionLink("Code Camp NYC", "Index", "Home")</h1>                    
+                    </div>            
+                </header>
+                <div class="content-wrapper">
+                        
+                <div id="content_box">
+            
+                    <div id="content">
+                        <section class="content-wrapper main-content clear-fix">
+                            @RenderBody()
+                        </section>
+                    </div>
+        
+                    <div id="sidebars">
+                        <div id="sidebar_1" class="sidebar">
+                            <ul class="sidebar_list">
+                                <li class="widget widget_text">
+                                    <h3>Marquee Sponsor</h3>			
+                                    <div class="textwidget">
+                                        <a target="_blank" href="http://microsoft.com/">
+                                            <img class="sponsor-image" alt="Microsoft Corporation" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_Microsoft.png" />
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="widget widget_text">
+                                    <h3>Platinum Sponsors</h3>			
+                                    <div class="textwidget">
+                                        <a target="_blank" href="http://apprenda.com/">
+                                            <img class="sponsor-image" alt="Apprenda" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_Apprenda.png" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://go-planet.com/">
+                                            <img class="sponsor-image" alt="Planet technologies" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_PlanetTechnologies.gif" />
+                                        </a> 
+                                        <br/><br/>
+                                        <a target="_blank" href="http://red-gate.com/">
+                                            <img class="sponsor-image" alt="Red Gate" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_RedGate.png" />
+                                        </a> 
+                                    </div>
+                                </li>
+                                <li class="widget widget_text">
+                                    <h3>Gold Sponsors</h3>			
+                                    <div class="textwidget">
+                                        <a target="_blank" href="http://telerik.com/">
+                                            <img class="sponsor-image" alt="Telerik" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_telerik.jpg" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://orcsweb.com/">
+                                            <img class="sponsor-image" alt="Orcs Web" src="http://www.codecampnyc.org/wp-content/uploads/2012/09/logo_Orcsweb.jpg" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://couchbase.com/">
+                                            <img class="sponsor-image" alt="Couchbase" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_Couchbase.png" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://componentone.com/">
+                                            <img class="sponsor-image" alt="ComponentOne" src="http://www.codecampnyc.org/wp-content/uploads/2012/09/logo_ComponentOne.png" />
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="widget widget_text">
+                                    <h3>Silver Sponsors</h3>			
+                                    <div class="textwidget">
+                                        <a target="_blank" href="http://jetbrains.com/">
+                                            <img class="sponsor-image" alt="Jet Brains" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_jetbrains.gif" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://discountasp.net/nyc">
+                                            <img class="sponsor-image" alt="discount ASP.NET" src="http://www.codecampnyc.org/wp-content/uploads/2012/09/logo_DiscountASPNET.gif" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://aspose.com/">
+                                            <img class="sponsor-image" alt="Aspose" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_Aspose.png" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://softfluent.com/">
+                                            <img class="sponsor-image" alt="SoftFluent" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_SoftFluent.gif" />
+                                        </a>
+                                        <br/>
+                                        (Sponsorships Available, contact <a href="mailto:codecampnyc@gmail.com">codecampnyc@gmail.com</a>)
+                                    </div>
+                                </li>
+                                <li class="widget widget_text" >
+                                    <h3>Contributing Vendors</h3>			
+                                    <div class="textwidget">
+                                        <a target="_blank" href="http://ssware.com/">
+                                            <img class="sponsor-image" alt="LogicNP Software" src="http://codecampnyc.org/wp-content/uploads/logo_LogicNPSoftware.jpg" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://nevron.com/">
+                                            <img class="sponsor-image" alt="Nevron" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_Nevron.gif" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://apress.com/">
+                                            <img class="sponsor-image" alt="Apress" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_apress.png" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://oreilly.com/">
+                                            <img class="sponsor-image" alt="O'Reilly" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_OReilly.gif" />
+                                        </a>
+                                        <br/><br/>
+                                        <a target="_blank" href="http://www.code-magazine.com/">
+                                            <img class="sponsor-image" alt="Code Magazine" src="http://www.codecampnyc.org/wp-content/uploads/2012/08/logo_CODEMagazine.jpg" />
+                                        </a>
+                                        <br/>
+                                        (Open, contact <a href="mailto:codecampnyc@gmail.com">codecampnyc@gmail.com</a>)
+                                    </div>
+                                </li>
+                                <li class="widget widget_text">
+                                    <h3>Your Local Microsoft Evangelists</h3>			
+                                    <div class="textwidget">
+                                        Check out the blogs of our local Microsoft Evangelists, who give continuous invaluable support to all of our groups!<br/>
+                                        <br/>
+                                        <b>Developer Evangelists:<br/>
+                                        </b>Peter Laudati: 
+                                        <a target="_blank" href="http://blogs.msdn.com/b/peterlau">Blog</a> 
+                                        <a target="_blank" href="http://twitter.com/jrzyshr">Twitter</a>
+                                        <br/>
+                                        Rachel Appel: 
+                                        <a target="_blank" href="http://rachelappel.com/">Blog</a> 
+                                        <a target="_blank" href="http://twitter.com/RachelAppel">Twitter</a><br/>
+                                        <br/>
+                                        <b>IT Pro Evangelist:<br/>
+                                        </b>Bob Hunt: 
+                                        <a target="_blank" href="http://blogs.technet.com/b/bobh/">Blog</a> 
+                                        <a target="_blank" href="http://twitter.com/bobhms">Twitter</a>
+                                    </div>
+                                </li>
+                                <li class="widget widget_text" id="text-3">
+                                    <div class="textwidget">
+                                        <div style="text-align:center">
+                                            <iframe src="http://www.communitymegaphone.com/eventsmini.aspx?PageSize=3&bgcolor=%23EBEBEB&forecolor=%23000000&filter=State+%3d+%2527CT%2527+OR+State+%3d+%2527NJ%2527+OR+State+%3d+%2527NY%2527+OR+State+%3d+%2527PA%2527&TextAlign=Center" frameborder='0' scrolling='no' width='160' height='255'></iframe>
+                                        </div>
+                                    </div>
+                                </li>				
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
 
+                <div id="footer">
+                    <div class="float-left">
+                        <p>&copy; @DateTime.Now.Year - Code Camp NYC</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
     </body>
