@@ -10,18 +10,9 @@ namespace Oahu
             // To let users of this site log in using their accounts from other sites such as Microsoft, Facebook, and Twitter,
             // you must update this site. For more information visit http://go.microsoft.com/fwlink/?LinkID=252166
 
-            OAuthWebSecurity.RegisterMicrosoftClient(
-                clientId: ConfigurationManager.AppSettings["MicrosoftClientId"],
-                clientSecret: ConfigurationManager.AppSettings["MicrosoftClientSecret"]);
-
-            OAuthWebSecurity.RegisterTwitterClient(
-                consumerKey: ConfigurationManager.AppSettings["TwitterConsumerKey"],
-                consumerSecret: ConfigurationManager.AppSettings["TwitterConsumerSecret"]);
-
-            OAuthWebSecurity.RegisterFacebookClient(
-                appId: ConfigurationManager.AppSettings["FacebookAppId"],
-                appSecret: ConfigurationManager.AppSettings["FacebookAppSecret"]);
-
+            OAuthWebSecurity.RegisterTwitterClient(ConfigurationManager.AppSettings["TwitterConsumerKey"], ConfigurationManager.AppSettings["TwitterConsumerSecret"]);
+            OAuthWebSecurity.RegisterMicrosoftClient(ConfigurationManager.AppSettings["MicrosoftClientId"], ConfigurationManager.AppSettings["MicrosoftClientSecret"]);
+            OAuthWebSecurity.RegisterFacebookClient(ConfigurationManager.AppSettings["FacebookAppId"], ConfigurationManager.AppSettings["FacebookAppSecret"]);
             OAuthWebSecurity.RegisterGoogleClient();
         }
     }

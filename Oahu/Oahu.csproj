@@ -172,7 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\custom.css" />
-    <Content Include="Content\Erik.css" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -232,7 +231,20 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\dot-ddd.gif" />
+    <Content Include="Images\facebook-button.png" />
+    <Content Include="Images\facebook_16.png" />
+    <Content Include="Images\facebook_32.png" />
+    <Content Include="Images\google-button.png" />
+    <Content Include="Images\google_16.png" />
+    <Content Include="Images\google_32.png" />
     <Content Include="Images\icon-rss.gif" />
+    <Content Include="Images\linkedin_16.png" />
+    <Content Include="Images\linkedin_32.png" />
+    <Content Include="Images\microsoft-button.png" />
+    <Content Include="Images\twitter-button.png" />
+    <Content Include="Images\twitter_16.png" />
+    <Content Include="Images\twitter_32.png" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -286,7 +298,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\View1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
