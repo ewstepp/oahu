@@ -98,7 +98,7 @@ h5, h6 { text-transform: uppercase; letter-spacing: 1px; }
 	.headline_meta a { border-bottom: 1px solid #eee; }
 
 /*---:[ horizontal dropdown nav menu structure ]:---*/
-.menu { position: relative; list-style: none; z-index: 50; }
+.menu { position: relative; list-style: none; width: 87%; z-index: 50; }
 	.menu li { position: relative; float: left; }
 		.menu ul { position: absolute; visibility: hidden; list-style: none; z-index: 110; }
 			.menu ul li { clear: both; }
