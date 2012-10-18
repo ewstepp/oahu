@@ -6,9 +6,9 @@ namespace Oahu.Tests
     public class Test
     {
         [Test]
-        public void WillFail()
+        public void WillSucceed()
         {
-            Assert.That(false, Is.True);
+            Assert.That(true, Is.True);
         }
     }
 }
