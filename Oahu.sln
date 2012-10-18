@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oahu", "Oahu\Oahu.csproj", "{1E730734-4FA1-449A-AB29-125DDED44649}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oahu.Tests", "Oahu.Tests\Oahu.Tests.csproj", "{0F5A2CE3-6CBE-4F31-A692-96E5961D5F1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{1E730734-4FA1-449A-AB29-125DDED44649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E730734-4FA1-449A-AB29-125DDED44649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E730734-4FA1-449A-AB29-125DDED44649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5A2CE3-6CBE-4F31-A692-96E5961D5F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5A2CE3-6CBE-4F31-A692-96E5961D5F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5A2CE3-6CBE-4F31-A692-96E5961D5F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5A2CE3-6CBE-4F31-A692-96E5961D5F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
